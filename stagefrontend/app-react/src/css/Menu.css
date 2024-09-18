@@ -1,0 +1,9 @@
+/* src/css/Menu.css */
+
+.menu-image {
+    width: 100%; /* Ensures the image scales to fit the width of its container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures images cover the defined area without distortion */
+    border-radius: 0; /* Removes border-radius if any */
+  }
+  

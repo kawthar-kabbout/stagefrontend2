@@ -1,0 +1,41 @@
+.rating1 {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.rating1 input {
+  display: none; /* Masque les boutons radio */
+}
+
+.rating1 label {
+  cursor: pointer;
+  position: relative;
+}
+
+.rating1 svg {
+  width: 2rem;
+  height: 2rem;
+  fill: none; /* Remplit la couleur de l'étoile */
+  stroke: #e4e8cc; /* Couleur du contour par défaut */
+  stroke-width: 2; /* Épaisseur du contour */
+  transition: fill 0.2s ease-in-out; /* Animation de transition */
+}
+
+.rating1 label.filled svg path {
+  fill: #ffc73a; /* Couleur de remplissage pour les étoiles remplies */
+  stroke: #ffc73a; /* Couleur du contour pour les étoiles remplies */
+}
+
+.rating1 label.half-filled svg path.half {
+  fill: #ffc73a; /* Couleur de remplissage pour la moitié */
+  stroke: #ffc73a; /* Couleur du contour pour la moitié */
+}
+
+.rating1 label.half-filled svg path.unfilled {
+  fill: none; /* Remplit la couleur de l'étoile */
+  stroke: #e4e8cc; /* Couleur du contour */
+  stroke-width: 2; /* Épaisseur du contour */
+  position: absolute;
+  left: 0;
+  top: 0;
+}

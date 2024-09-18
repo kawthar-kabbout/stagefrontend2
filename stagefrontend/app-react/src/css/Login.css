@@ -1,0 +1,151 @@
+/* LoginForm.css */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 520px;
+  height: auto; /* Ajusté pour s'adapter dynamiquement au contenu */
+  margin: 0 auto;
+  background-color: #ffffff25;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(128, 128, 128, 0.178);
+  position: relative;
+  overflow: hidden;
+  padding: 20px; /* Ajouté pour un espacement intérieur */
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  right: 1%;
+  z-index: -1;
+  background: radial-gradient(
+    circle,
+    rgb(194, 13, 170) 20%,
+    rgb(26, 186, 235) 60%,
+    rgb(26, 186, 235) 100%
+  );
+  filter: blur(70px);
+  border-radius: 50%;
+}
+
+.form::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  right: -40%;
+  background: radial-gradient(
+    circle,
+    rgba(157, 173, 203, 1) 61%,
+    rgba(99, 122, 159, 1) 100%
+  );
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.input,
+.button-submit {
+  background: rgba(253, 253, 253, 0);
+  outline: none;
+  border: 1px solid rgba(255, 0, 0, 0);
+  border-radius: 0.5rem;
+  padding: 14px; /* Ajusté pour une meilleure taille de bouton */
+  margin: 10px auto;
+  width: 80%;
+  max-width: 300px;
+  display: block;
+  color: #425981;
+  font-weight: 500;
+  font-size: 1em; /* Ajusté pour une taille de police plus cohérente */
+  text-align: center; /* Centré le texte */
+  transition: background-color 0.3s ease; /* Ajouté une transition pour le hover */
+}
+
+.input-block {
+  position: relative;
+}
+
+.flex-column > label {
+  position: absolute;
+  left: 15%;
+  top: 37%;
+  pointer-events: none;
+  color: gray;
+  transition: transform 0.4s, opacity 0.4s; /* Ajouté une transition */
+}
+
+.span {
+  display: block;
+  margin: 5px 0 10px 0;
+  margin-left: 35px;
+  color: #5e7eb6;
+  font-size: 0.9em;
+}
+
+.input:focus + label,
+.input:valid + label {
+  transform: translateY(-120%) scale(0.9);
+  opacity: 0.8; /* Réduit l'opacité pour indiquer l'état focus */
+}
+
+.button-submit {
+  background-color: #5e7eb6;
+  color: white;
+  font-size: 1em; /* Ajusté pour une taille de police cohérente */
+  box-shadow: 2px 4px 8px rgba(70, 70, 70, 0.178);
+  padding: 14px 20px; /* Ajusté pour un meilleur espacement */
+  border: none; /* Supprimé la bordure */
+  cursor: pointer; /* Changé le curseur au survol */
+  transition: background-color 0.3s ease; /* Ajouté une transition */
+}
+
+.input {
+  box-shadow: inset 4px 4px 4px rgba(165, 163, 163, 0.315),
+    4px 4px 4px rgba(218, 218, 218, 0.13);
+}
+
+@media (max-width: 768px) {
+  .form {
+    max-width: 90%;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.google {
+  background-color: #ffffff;
+  color: #5e7eb6;
+  border: 1px solid #bfc2c6;
+}
+
+.facebook {
+  background-color: #3557a1;
+  color: #ffffff;
+  border: none;
+}
+
+.btn svg {
+  margin-right: 10px;
+}
+
+.logo {
+  width: 20px; /* Ajustez la taille du logo Google */
+  margin-right: 10px; /* Espace entre le logo et le texte */
+}

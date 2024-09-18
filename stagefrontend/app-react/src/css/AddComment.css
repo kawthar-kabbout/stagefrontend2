@@ -1,0 +1,77 @@
+.add-comment-container {
+    margin: 150px;
+  }
+  
+  .comment-form-wrapper {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    color: #ff4b4b; /* Red title */
+    margin-bottom: 15px;
+  }
+  
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .star-group,
+  .text-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:20px;
+    margin-bottom: 15px;
+  }
+  
+  .star-group {
+    justify-content: flex-start; /* Align stars to the left */
+  }
+  
+  .text-group {
+    flex-grow: 1;
+    justify-content: flex-end; /* Align text area to the right */
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    color: #ff4b4b; /* Red label */
+    margin-right: 10px;
+  }
+  
+  .form-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .submit-button {
+    background-color: #ff4b4b; /* Red button */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+  }
+  
+  .submit-button:hover {
+    background-color: #e43a3a; /* Darker red on hover */
+  }
+  
+  .no-user-message {
+    color: #999;
+    font-style: italic;
+  }
+  

@@ -1,0 +1,341 @@
+/* Définition générale pour le corps et le HTML */
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+/* Style pour la section des restaurants */
+.restaurants-list {
+  background-color: #f8f9fa; /* Fond pour la section des restaurants */
+  padding: 20px; /* Espacement intérieur pour le contenu */
+}
+
+/* Styles pour les cartes Bootstrap */
+.card {
+  transition: transform 0.2s;
+}
+.title-text {
+  font-size: 4rem; /* Augmente la taille de police du titre */
+  font-weight: bold; /* Garde le texte en gras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre de texte pour le contraste */
+}
+
+
+
+
+
+
+
+/* Custom Logout Button Style */
+#logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(255, 65, 65);
+}
+
+
+
+
+/* Icon Container */
+#logout-button .sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logout-button .sign svg {
+  width: 17px;
+}
+
+#logout-button .sign svg path {
+  fill: white;
+}
+
+/* Text */
+#logout-button .text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+/* Custom Logout Button Style */
+#logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(255, 65, 65);
+}
+
+/* Icon Container */
+#logout-button .sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logout-button .sign svg {
+  width: 17px;
+}
+
+#logout-button .sign svg path {
+  fill: white;
+}
+
+/* Text */
+#logout-button .text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+/* Custom Logout Button Style */
+#logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(255, 65, 65);
+}
+
+/* Icon Container */
+#logout-button .sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logout-button .sign svg {
+  width: 17px;
+}
+
+#logout-button .sign svg path {
+  fill: white;
+}
+
+/* Text */
+#logout-button .text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+
+/* Hover Effects */
+#logout-button:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+}
+
+#logout-button:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 20px;
+}
+
+#logout-button:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+
+/* Button Click Effect */
+#logout-button:active {
+  transform: translate(2px, 2px);
+}
+
+
+
+
+
+/* From Uiverse.io by vinodjangid07 */
+#sign-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(163, 142, 255);
+}
+
+
+
+
+/* plus sign */
+#sign-button .sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sign-button .sign svg {
+  width: 17px;
+}
+
+#sign-button .sign svg path {
+  fill: white;
+}
+
+/* text */
+#sign-button .text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+
+/* hover effect on button width */
+#sign-button:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+}
+
+#sign-button:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 20px;
+}
+
+/* hover effect button's text */
+#sign-button:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+
+/* button click effect */
+#sign-button:active {
+  transform: translate(2px, 2px);
+}
+
+
+
+/* styles.css */
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.d-flex.justify-content-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px; /* Ajustez l'espacement entre les éléments de navigation */
+}
+
+.d-flex.align-items-center.mx-3 {
+  margin-left: 15px; /* Espacement entre les éléments de navigation et le composant Search */
+}
+
+/* Assurez-vous que le bouton et les informations utilisateur sont alignés à droite */
+.d-flex.align-items-center.ms-auto {
+  margin-left: auto; /* Pousse le contenu vers la droite */
+}
+
+
+
+
+
+.navbar-toggler {
+  padding: 10px; /* Augmente le remplissage du bouton */
+  font-size: 1.5rem; /* Augmente la taille de l'icône */
+  color: #fff; /* Couleur de l'icône */
+  background-color: #343a40; /* Couleur de fond du bouton */
+  border: none; /* Supprime la bordure par défaut */
+  border-radius: 5px; /* Ajoute des coins arrondis */
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    text-align: center; /* Centre les éléments du menu déroulant */
+  }
+}

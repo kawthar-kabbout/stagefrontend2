@@ -1,0 +1,109 @@
+/* AddRestaurant.css */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+
+    
+}.restaurant-image {
+    width: 300px; /* Largeur fixe */
+    height: 200px; /* Hauteur fixe */
+    object-fit: cover; /* Pour que l'image remplisse le conteneur sans déformation */
+    border-radius: 8px; /* Pour des coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+    margin: 10px 0; /* Espace autour de l'image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'effet hover */
+}
+
+.restaurant-image:hover {
+    transform: scale(1.05); /* Agrandissement de l'image au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+.uv-checkbox-wrapper {
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  .uv-checkbox {
+    display: none;
+  }
+  
+  .uv-checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .uv-checkbox-icon {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    border: 2px solid #ccc;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    transition: border-color 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  .uv-checkmark {
+    position: absolute;
+    top: 0.1em;
+    left: 0.1em;
+    width: 1.6em;
+    height: 1.6em;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 24;
+    stroke-dashoffset: 24;
+    transition: stroke-dashoffset 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+  
+  .uv-checkbox-text {
+    margin-left: 0.5em;
+    transition: color 0.3s ease;
+  }
+  
+  .uv-checkbox:checked + .uv-checkbox-label .uv-checkbox-icon {
+    border-color: #5c75e7;
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    background-color: #5c75e7;
+  }
+  
+  .uv-checkbox:checked + .uv-checkbox-label .uv-checkmark {
+    stroke-dashoffset: 0;
+  }
+  
+  .uv-checkbox:checked + .uv-checkbox-label .uv-checkbox-text {
+    color: #5c75e7;
+  }
+  

@@ -1,0 +1,33 @@
+/* src/css/StarAddComment.css */
+.star-rating-add-comment input {
+    display: none;
+  }
+  
+  .star-rating-add-comment label {
+    float: right;
+    font-size: 30px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .star-rating-add-comment label:before {
+    content: '★';
+  }
+  
+  .star-rating-add-comment input:checked ~ label {
+    color: #ffa723;
+  }
+  
+  .star-rating-add-comment input:checked + label:hover,
+  .star-rating-add-comment input:checked + label:hover ~ label,
+  .star-rating-add-comment input:checked ~ label:hover,
+  .star-rating-add-comment input:checked ~ label:hover ~ label,
+  .star-rating-add-comment label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .star-rating-add-comment label:hover,
+  .star-rating-add-comment label:hover ~ label {
+    color: #ff9e0b;
+  }
+  

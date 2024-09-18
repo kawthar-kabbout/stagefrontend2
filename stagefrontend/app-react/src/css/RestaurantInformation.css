@@ -1,0 +1,406 @@
+
+
+.menu-column {
+  padding-right: 20px; /* Ajuste l'espacement à droite pour plus d'espace */
+  flex: 1; /* Permet à la colonne de prendre l'espace disponible */
+}
+
+.information-column {
+  padding-left: 20px; /* Ajuste l'espacement à gauche */
+  flex: 0 0 auto; /* Ne pas étirer la colonne pour maintenir sa largeur */
+  margin-left: auto; /* Pousse la colonne vers la droite */
+  margin-right: 50px; /* Ajoute une marge droite pour décaler encore plus le composant */
+}
+
+.restaurant-information-container {
+  margin-top: 20px;
+  padding: 0 4%; /* Contrôler le padding pour centrer le contenu */
+  max-width: 100%; /* Assurer que le conteneur ne dépasse pas la largeur de l'écran */
+}
+
+.menu-column,
+.information-column {
+  flex: 1; /* Permet aux colonnes de s'adapter à l'espace disponible */
+  min-width: 0; /* Permet aux colonnes de se réduire à une taille minimale */
+}
+
+.menu-column {
+  padding-right: 15px;
+}
+
+.information-column {
+  padding-left: 15px;
+}
+
+.restaurant-footer {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.img-container {
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 100%; /* Ensure the image container doesn't exceed the page width */
+}
+
+.review-list-wrapper {
+  margin-top: 20px;
+  padding-bottom: 80px; /* Keep the padding at the bottom for spacing */
+}
+
+.card-header h4 {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/* Styles for RestaurantInformation */
+.restaurant-info-container {
+  margin-top: 20px;
+  padding: 0 4%;
+  max-width: 100%;
+}
+
+.menu-section {
+  padding-right: 20px;
+  flex: 1;
+}
+
+.info-section {
+  padding-left: 20px;
+  flex: 0 0 auto;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.review-section {
+  margin-top: 20px;
+  padding-bottom: 80px;
+}
+
+.like-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.like-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.like-button-text {
+  margin-left: 10px;
+}
+
+.like-button-count {
+  margin-left: 10px;
+}
+
+.restaurant-footer {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-link {
+  margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RestaurantInformation.css */
+
+.restaurant-footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  border-top: 1px solid #dee2e6;
+  margin-top: 2rem;
+}
+
+.restaurant-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.restaurant-footer nav {
+  margin-top: 0.5rem;
+}
+
+.restaurant-footer .footer-link {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.restaurant-footer .footer-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RestaurantInformation.css */
+.like-btn {
+  width: 140px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.089);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.like-btn-left-container {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(238, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.like-btn-left-container .like-btn-text {
+  color: white;
+  font-weight: 600;
+}
+
+.like-btn-count {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(238, 0, 0);
+  font-weight: 600;
+  position: relative;
+  background-color: white;
+}
+
+.like-btn-count::before {
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  content: "";
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+  left: -4px;
+}
+
+.like-btn:hover .like-btn-left-container {
+  background-color: rgb(219, 0, 0);
+}
+
+.like-btn:active .like-btn-left-container {
+  background-color: rgb(201, 0, 0);
+}
+
+.like-btn:active .like-btn-left-container svg {
+  transform: scale(1.15);
+  transform-origin: top;
+}
+
+
+
+
+
+
+
+
+
+
+/* Styles spécifiques pour #add-comment-btn */
+#add-comment-btn {
+  height: 50px; /* Hauteur uniforme */
+  min-width: 150px; /* Largeur minimale uniforme */
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 25px; /* Bordure arrondie */
+  outline: none;
+  overflow: hidden;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  text-align: center;
+  margin: 0 10px; /* Espacement entre les boutons */
+
+  border-color: #dc3545; /* Couleur de bordure rouge */
+  color: #dc3545; /* Couleur du texte en rouge */
+}
+
+#add-comment-btn svg {
+  fill: #dc3545; /* Couleur du SVG en rouge */
+}
+
+#add-comment-btn::before {
+  box-shadow: inset 0 0 0 10em #dc3545; /* Couleur de l'ombre rouge */
+}
+
+#add-comment-btn:hover {
+  color: #fff; /* Couleur du texte en blanc au survol */
+  border-color: #c82333; /* Couleur de bordure rouge plus foncé au survol */
+  background-color: #dc3545; /* Couleur de fond rouge au survol */
+}
+
+#add-comment-btn:hover svg {
+  fill: currentColor; /* Couleur du SVG au survol */
+}
+
+/* Styles spécifiques pour #instagram-btn */
+#instagram-btn {
+  height: 50px; /* Hauteur uniforme */
+  min-width: 150px; /* Largeur minimale uniforme */
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 25px; /* Bordure arrondie */
+  outline: none;
+  overflow: hidden;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  text-align: center;
+  margin: 0 10px; /* Espacement entre les boutons */
+  border-color: #dc3545; /* Couleur de bordure rouge */
+  color: #dc3545; /* Couleur du texte en rouge */
+}
+
+#instagram-btn svg {
+  fill: #dc3545; /* Couleur du SVG en rouge */
+}
+
+#instagram-btn::before {
+  box-shadow: inset 0 0 0 10em #dc3545; /* Couleur de l'ombre rouge */
+}
+
+#instagram-btn:hover {
+  color: #fff; /* Couleur du texte en blanc au survol */
+  border-color: #c82333; /* Couleur de bordure rouge plus foncé au survol */
+  background-color: #dc3545; /* Couleur de fond rouge au survol */
+}
+
+#instagram-btn:hover svg {
+  fill: currentColor; /* Couleur du SVG au survol */
+}
+
+/* Styles spécifiques pour #facebook-btn */
+#facebook-btn {
+  height: 50px; /* Hauteur uniforme */
+  min-width: 150px; /* Largeur minimale uniforme */
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 25px; /* Bordure arrondie */
+  outline: none;
+  overflow: hidden;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  text-align: center;
+  margin: 0 10px; /* Espacement entre les boutons */
+  border-color: rgb(59, 89, 152); /* Couleur de bordure Facebook */
+  color: rgb(59, 89, 152); /* Couleur du texte en bleu Facebook */
+}
+
+#facebook-btn svg {
+  fill: rgb(59, 89, 152); /* Couleur du SVG en bleu Facebook */
+}
+
+#facebook-btn::before {
+  box-shadow: inset 0 0 0 10em rgb(59, 89, 152); /* Couleur de l'ombre Facebook */
+}
+
+#facebook-btn:hover {
+  color: #fff; /* Couleur du texte en blanc au survol */
+  border-color: rgb(47, 68, 137); /* Couleur de bordure Facebook plus foncée au survol */
+  background-color: rgb(59, 89, 152); /* Couleur de fond Facebook au survol */
+}
+
+#facebook-btn:hover svg {
+  fill: currentColor; /* Couleur du SVG au survol */
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+
+/* Styles existants */
+.bg-image {
+  background-image: url('../assets/3.jpg'); /* Chemin vers votre image */
+  background-size: cover; /* Couvre toute la zone */
+  background-position: center; /* Centre l'image */
+  height: 100vh; /* Remplit la hauteur de l'écran */
+  display: flex; /* Utilise Flexbox pour centrer le contenu */
+  align-items: center; /* Centre verticalement */
+  justify-content: center; /* Centre horizontalement */
+  padding: 20px; /* Ajoute un peu de remplissage */
+  text-align: center; /* Centre le texte */
+}
+.restaurant-card {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  max-width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out; /* Transition pour une animation fluide */
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px); /* Effet de translation vers le haut au survol */
+  box-shadow: 0 4px 8px rgba(237, 195, 195, 0.1); /* Ombre légère pour simuler un effet de levée */
+}
+
+.restaurant-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+}
+
+.restaurant-image1 {
+  width: 250px; /* Largeur fixe */
+  height: 200px; /* Hauteur fixe */
+  object-fit: cover; /* Maintient le ratio d'aspect tout en remplissant les dimensions définies */
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.restaurant-details {
+  margin-top: 12px;
+}
+
+.restaurant-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.restaurant-description {
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+}
+
+.restaurant-localisation {
+  font-style: italic;
+  color: #888;
+}
+
+.date-time {
+  color: rgba(7, 63, 216, 1);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.author {
+  margin-top: 8px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(107, 114, 128, 1);
+}
+
+.restaurants-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.title-text {
+  color: white; /* Couleur du texte */
+  font-size: 2.5rem; /* Taille de police par défaut */
+  max-width: 90%; /* Limite la largeur du texte pour éviter le débordement */
+  margin: 0 auto; /* Centre le titre */
+  display: block; /* Permet au texte de prendre toute la largeur disponible */
+  white-space: normal; /* Permet le retour à la ligne */
+  overflow: hidden; /* Masque le débordement */
+  border-right: 2px solid rgba(255, 255, 255, 0.75); /* Curseur */
+  animation: 
+    typing 4s steps(40, end) forwards, 
+    cursor-blink 0.75s step-end infinite; /* Ajustez la durée de l'animation selon vos besoins */
+}
+
+/* Media Queries pour les tailles d'écran */
+@media (max-width: 1200px) {
+  .title-text {
+    font-size: 2rem; /* Réduit la taille de la police pour les écrans moyens */
+  }
+}
+
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 1.5rem; /* Réduit encore la taille de la police pour les petits écrans */
+  }
+}
+
+@media (max-width: 480px) {
+  .title-text {
+    font-size: 1.2rem; /* Taille de police pour les très petits écrans */
+  }
+}
+
+/* Styles pour l'effet de frappe */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes cursor-blink {
+  0% { border-right-color: rgba(255, 255, 255, 0.75); }
+  100% { border-right-color: transparent; }
+}
+  
+/* Restaurant.css */
+.restaurant-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.restaurant-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
